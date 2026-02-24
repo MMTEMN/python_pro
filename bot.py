@@ -1,6 +1,10 @@
 import discord
+import os
 from bot_mantik import yazi_tura, gen_pass,saat 
+from dotenv import load_dotenv
 
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
 
 # ayricaliklar (intents) değişkeni botun ayrıcalıklarını depolayacak
 intents = discord.Intents.default()
@@ -30,4 +34,4 @@ async def on_message(message):
     else:
         await message.channel.send(message.content)
 
-client.run("MTQ3NDExMTIzMzQ1MDgzNjE1MQ.G-VZov.xnzT7UqIQf8plasN7FBQOyzhIxroKpXQXco1bk")
+client.run(TOKEN)
