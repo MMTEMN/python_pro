@@ -1,6 +1,6 @@
 import discord
 import os
-from bot_mantik import yazi_tura, gen_pass,saat 
+from bot_mantik import yazi_tura, gen_pass,saatsoyle 
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -30,7 +30,7 @@ async def on_message(message):
     elif message.content.startswith('$oyun'):
         await message.channel.send(yazi_tura())
     elif message.content.startswith('$saat'):
-        await message.channel.send("su anda saat:"+saat())
+        await message.channel.send("su anda saat:"+saatsoyle())
     else:
         await message.channel.send(message.content)
 

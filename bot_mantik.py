@@ -19,5 +19,6 @@ def yazi_tura():
     else:
         return "TURA" 
     
-def saat():
-    return time.strftime ( " %H:%M:%S" ) ## 24 saat formatı ## time.strftime ( " %H:%M:%S" ) ## 12 saat formatı ## time.strftime ( "%I:%M: % S " )
+def saatsoyle():
+    s = time.strftime ( "%H:%M:%S" )
+    return s  ## 24 saat formatı ## time.strftime ( " %H:%M:%S" ) ## 12 saat formatı ## time.strftime ( "%I:%M: % S " )
