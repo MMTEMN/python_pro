@@ -13,6 +13,8 @@ intents.message_content = True
 # client (istemci) değişkeniyle bir bot oluşturalım ve ayrıcalıkları ona aktaralım
 client = discord.Client(intents=intents)
 
+
+
 @client.event
 async def on_ready():
     print(f'{client.user} olarak giriş yaptık.')
